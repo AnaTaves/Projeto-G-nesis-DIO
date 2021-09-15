@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background-color: #d0ffef;
+}
+
+.main-game {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-game .genius {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'verde vermelho' 'amarelo azul';
+  grid-gap: 10px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+.main-game .genius .blue {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: azul;
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+}
+
+.main-game .genius .red {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: vermelho;
+  background-color: red;
+  border-top-right-radius: 100%;
+}
+
+.main-game .genius .yellow {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: amarelo;
+  background-color: yellow;
+  border-bottom-left-radius: 100%;
+}
+
+.main-game .genius .green {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: verde;
+  background-color: green;
+  border-top-left-radius: 100%;
+}
+
+.main-game .genius .selected {
+  opacity: 0.4;
+}
+/*# sourceMappingURL=style.css.map */
